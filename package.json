@@ -1,6 +1,6 @@
 {
   "name": "workshop-hkha-components-test",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,8 @@
     "start": "webpack-dev-server",
     "build": "rm -rf ./dist && webpack",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "prepublish":"babel src -d lib"
   },
   "author": "",
   "license": "ISC",
