@@ -1,8 +1,8 @@
 {
   "name": "workshop-hkha-components-test",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server",
@@ -20,6 +20,7 @@
     "redux": "^4.0.5"
   },
   "devDependencies": {
+    "@babel/cli": "^7.11.6",
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
@@ -27,7 +28,6 @@
     "@storybook/addon-essentials": "^6.0.21",
     "@storybook/addon-links": "^6.0.21",
     "@storybook/react": "^6.0.21",
-    "babel-cli": "^6.26.0",
     "babel-loader": "^8.1.0",
     "html-webpack-plugin": "^4.4.1",
     "react-is": "^16.13.1",
