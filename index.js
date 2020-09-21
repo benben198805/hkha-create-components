@@ -1,6 +1,5 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import { ShadowPanel } from './components/ShadowPanel'
 
-const Container = ()=><div>React Application</div>
-
-ReactDOM.render(<Container/>, document.getElementById('root'))
+export {
+  ShadowPanel
+}
