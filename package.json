@@ -1,15 +1,15 @@
 {
   "name": "workshop-hkha-components-test",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server",
-    "build": "rm -rf ./dist && webpack",
+    "build": "rm -rf ./lib && webpack",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "prepublish": "babel src -d lib"
+    "prepublish": "npm run build"
   },
   "author": "",
   "license": "ISC",
@@ -29,8 +29,10 @@
     "@storybook/addon-links": "^6.0.21",
     "@storybook/react": "^6.0.21",
     "babel-loader": "^8.1.0",
+    "css-loader": "^4.3.0",
     "html-webpack-plugin": "^4.4.1",
     "react-is": "^16.13.1",
+    "style-loader": "^1.2.1",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
