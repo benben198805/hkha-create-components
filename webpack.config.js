@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 
@@ -9,7 +10,10 @@ module.exports={
   },
   module:{
     rules:[
-      {test:/.jsx?$/, use:'babel-loader'}
+      {test:/\.jsx?$/, use:'babel-loader'}
     ]
-  }
+  },
+  plugins:[
+    new HtmlWebpackPlugin({ template:'./template.html'})
+  ]
 }
